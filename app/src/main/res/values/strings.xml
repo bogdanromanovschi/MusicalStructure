@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Musical Structure</string>
+    <string name="recently_played">Recently Played</string>
+    <string name="search_library">Search Library</string>
+    <string name="list_albums">List Albums</string>
+    <string name="store_link">Purchase Music</string>
+    <string name="now_playing">Now Playing</string>
+
+    <string name="google_store">Google Play</string>
+    <string name="itunes_store">iTunes</string>
+    <string name="amazon_store">Amazon</string>
+    <string name="pono_store">Pono</string>
+
+    <string name="search_hint">Artist, Album, Song &#8230;</string>
+
+    <string name="now_playing_artist">Philip Glass</string>
+    <string name="now_playing_album">Symphony No 4, "Heroes"</string>
+    <string name="now_playing_track">Neuköln</string>
+
+    <string name="recently_played_artist_1">Philip Glass</string>
+    <string name="recently_played_album_1">Einstein on the Beach</string>
+    <string name="recently_played_track_1">Knee Play 1</string>
+
+    <string name="recently_played_artist_2">Philip Glass</string>
+    <string name="recently_played_album_2">Einstein on the Beach</string>
+    <string name="recently_played_track_2">Act One: Scene 1: Train</string>
+
+    <string name="recently_played_artist_3">Philip Glass</string>
+    <string name="recently_played_album_3">Einstein on the Beach</string>
+    <string name="recently_played_track_3">Act Two: Scene 1: Dance 1 (Field with Spaceship)</string>
+
+    <string name="recently_played_artist_4">Philip Glass</string>
+    <string name="recently_played_album_4">Einstein on the Beach</string>
+    <string name="recently_played_track_4">Act Four: Scene 1: Building</string>
+
+    <string name="recently_played_artist_5">Philip Glass</string>
+    <string name="recently_played_album_5">Einstein on the Beach</string>
+    <string name="recently_played_track_5">Act Four: Scene 2: Bed</string>
+
+    <string name="next_steps_albums">Use the ContentResolver class to retrieve tracks on the device through the MediaStore.Audio.Media class. Use android.provider.MediaStore.Audio.Media.ALBUM to identify albums. The app need to bind to the music playing Service in order to interact with playback.</string>
+    <string name="next_steps_now_playing">Include in Android Manifest: android.permission.WAKE_LOCK. \nUse the MediaPlayer class to play audio and the MediaController class to control playback.</string>
+    <string name="next_steps_store">Use links to the webpages of the music services listed above, as we don\'t know if relevant apps are installed on the user\'s phone. The one exception is Google Play, for which access can be set up using an Intent.</string>
+    <string name="next_steps_recently_played">A list of recently played tracks, by track id, is stored and called for display in this screen. The list is displayed here and called for playback using  the MediaPlayer  and the MediaController classes.</string>
+    <string name="next_steps_search">Use the ContentResolver class to retrieve tracks on the device through the MediaStore.Audio.Media class. \nThe app needs to bind to the music playing Service in order to interact with playback. The music player control functionality will be implemented using the MediaController class. \nAllocate a track id to each song in the list, to be used in calling the playback and storing the recently played items.</string>
+
+</resources>

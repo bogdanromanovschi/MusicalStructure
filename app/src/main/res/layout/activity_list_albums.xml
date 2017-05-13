@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.android.musicalstructure.ListAlbums">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/list_albums_recent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/recentlyPlayed"
+                android:padding="@dimen/icon_padding"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_replay_white_24dp" />
+
+            <ImageView
+                android:id="@+id/list_albums_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/searchLibrary"
+                android:padding="@dimen/icon_padding"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_library_music_white_24dp" />
+
+            <ImageView
+                android:id="@+id/list_albums_purchase"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/storeLink"
+                android:padding="@dimen/icon_padding"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_euro_symbol_white_24dp" />
+
+            <ImageView
+                android:id="@+id/list_albums_now"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/nowPlaying"
+                android:padding="@dimen/icon_padding"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_hearing_white_24dp" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/ScreenTitle"
+            android:layout_margin="@dimen/title_margin"
+            android:background="@color/listAlbums"
+            android:text="@string/list_albums" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/album_covers">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/album_covers"
+                    android:layout_height="@dimen/album_covers"
+                    android:padding="@dimen/album_padding"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/cover1" />
+
+                <ImageView
+                    android:layout_width="@dimen/album_covers"
+                    android:layout_height="@dimen/album_covers"
+                    android:padding="@dimen/album_padding"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/cover2" />
+
+                <ImageView
+                    android:layout_width="@dimen/album_covers"
+                    android:layout_height="@dimen/album_covers"
+                    android:padding="@dimen/album_padding"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/cover3" />
+
+                <ImageView
+                    android:layout_width="@dimen/album_covers"
+                    android:layout_height="@dimen/album_covers"
+                    android:padding="@dimen/album_padding"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/cover4" />
+
+                <ImageView
+                    android:layout_width="@dimen/album_covers"
+                    android:layout_height="@dimen/album_covers"
+                    android:padding="@dimen/album_padding"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/cover5" />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <ImageView
+            android:layout_width="@dimen/scroll_icon"
+            android:layout_height="@dimen/scroll_icon"
+            android:layout_marginLeft="@dimen/album_padding"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_swap_horiz_black_24dp" />
+
+        <TextView
+            style="@style/NextSteps"
+            android:layout_margin="@dimen/title_margin"
+            android:background="@color/nextSteps"
+            android:text="@string/next_steps_albums" />
+
+    </LinearLayout>
+
+
+</ScrollView>
+

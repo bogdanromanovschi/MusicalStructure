@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.android.musicalstructure.PurchaseMusic">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/list_purchase_recent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/recentlyPlayed"
+                android:padding="@dimen/icon_padding"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_replay_white_24dp" />
+
+            <ImageView
+                android:id="@+id/list_purchase_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/searchLibrary"
+                android:padding="@dimen/icon_padding"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_library_music_white_24dp" />
+
+            <ImageView
+                android:id="@+id/list_purchase_albums"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/listAlbums"
+                android:padding="@dimen/icon_padding"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_album_white_24dp" />
+
+
+            <ImageView
+                android:id="@+id/list_purchase_now"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@color/nowPlaying"
+                android:padding="@dimen/icon_padding"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_hearing_white_24dp" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/ScreenTitle"
+            android:layout_margin="@dimen/title_margin"
+            android:background="@color/storeLink"
+            android:text="@string/store_link" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/title_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/list_icon_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/icon_padding"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo_googleplay" />
+
+                <TextView
+
+                    style="@style/ClickAreaStyle"
+                    android:background="@color/storeGrey"
+                    android:text="@string/google_store" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/list_icon_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/icon_padding"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/itunes_logo_" />
+
+                <TextView
+                    style="@style/ClickAreaStyle"
+                    android:background="@color/storeIndigo"
+                    android:text="@string/itunes_store" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/list_icon_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/icon_padding"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/amazon_logo_" />
+
+                <TextView
+                    style="@style/ClickAreaStyle"
+                    android:background="@color/storeGrey"
+                    android:text="@string/amazon_store" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/list_icon_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/icon_padding"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/pono_logo" />
+
+                <TextView
+                    style="@style/ClickAreaStyle"
+                    android:background="@color/storeIndigo"
+                    android:text="@string/pono_store" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/NextSteps"
+            android:layout_margin="@dimen/title_margin"
+            android:background="@color/nextSteps"
+            android:text="@string/next_steps_store" />
+
+    </LinearLayout>
+
+</ScrollView>
+
